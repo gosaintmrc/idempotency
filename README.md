@@ -12,8 +12,8 @@
 
 ​	这也就是我为什么这里为什么是接口的幂等设计一的原因啦。实现的方式当然是多种的。比如乐观锁机制等。这里我们使用了唯一Token的方式来实现。流程如下：
 
- ![image]( https://github.com/ljheee/HexTransform/blob/master/abc.jpg)
-
+ ![image](idempotency/image/123.png)
+ 
 ​	说明下流程：
 
 ​	1 假设前端准备提交支付按钮
