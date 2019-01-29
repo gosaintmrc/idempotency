@@ -12,7 +12,7 @@
 
 ​	这也就是我为什么这里为什么是接口的幂等设计一的原因啦。实现的方式当然是多种的。比如乐观锁机制等。这里我们使用了唯一Token的方式来实现。流程如下：
 
-![你想输入的替代文字](接口的幂等性设计-一/123.png)
+ ![image]( https://github.com/ljheee/HexTransform/blob/master/abc.jpg)
 
 ​	说明下流程：
 
