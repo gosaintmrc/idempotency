@@ -1,0 +1,38 @@
+server:
+  port: 8083
+# Spring 数据库、mvc、data redis、freemarker配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/micro-shop?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: gosaint
+  mvc:
+    static-path-pattern: /static/**
+  redis:
+    host: localhost
+    port: 6380
+    password: gosaint
+    timeout: 1000
+    database: 0
+    jedis:
+      pool:
+        max-wait: 100
+        max-active: 10
+        min-idle: 2
+        max-idle: 8
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+    content-type: text/html
+    charset: UTF-8
+    cache: false
+
+
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:/mybatis/mappers/*.xml
+  type-aliases-package: com.gosaint.idempotency.domain
+
+
+
